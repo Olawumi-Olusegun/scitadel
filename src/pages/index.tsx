@@ -73,13 +73,19 @@ const Home = () => {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <ul className="mt-4 flex flex-col space-y-2 text-black/80 lg:hidden">
-                        <li><Link to={"/"}>Goalkeepers</Link></li>
-                        <li><Link to={"/"}>Defenders</Link></li>
-                        <li><Link to={"/"}>Midfielders</Link></li>
-                        <li><Link to={"/"}>Attackers</Link></li>
-                        <li><Link to={"/signin"}>Log in</Link></li>
-                        <li><Link to={"/"}>Contact Us</Link></li>
+                    <ul className="mt-4 flex flex-col space-y-3 text-black/80 lg:hidden h-screen">
+                        <li className="mb-3">
+                            <Button onClick={() => setTriggerSearch((prev) => !prev)} variant={"outline"} className="w-full flex items-center justify-center gap-1 group outline outline-green-700 bg-green-100 hover:bg-green-200 duration-300  text-green-700 font-bold py-2 px-4 rounded mt-4">
+                                Search for Players
+                                <MoveRight className="group-hover:translate-x-1 duration-300" />
+                            </Button>
+                        </li>
+                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Goalkeepers</Link></li>
+                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Defenders</Link></li>
+                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Midfielders</Link></li>
+                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Attackers</Link></li>
+                        <li onClick={() => setIsOpen(false)}><Link to={"/signin"}>Log in</Link></li>
+                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Contact Us</Link></li>
                     </ul>
                 )}
             </div>
