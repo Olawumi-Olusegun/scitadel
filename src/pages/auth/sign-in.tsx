@@ -76,7 +76,8 @@ const SignIn = () => {
                             <Button type="submit" className="w-full col-span-2 bg-green-700 hover:bg-green-600">Submit</Button>
                         </form>
                     </Form>
-                    <span className="text-sm">Don't have an account? <Link to={"/signup"} className="text-green-700">Signup</Link> </span>
+                    <Link to={"/signup"} className="text-sm text-center text-green-700">Don't have an account? Signup</Link>
+
                 </div>
             </div>
         </>

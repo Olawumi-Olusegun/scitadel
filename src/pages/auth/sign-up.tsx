@@ -124,7 +124,8 @@ const SignUp = () => {
                             <Button type="submit" className="w-full col-span-2 bg-green-700 hover:bg-green-600">Submit</Button>
                         </form>
                     </Form>
-                    <span className="text-sm">Already have an account? <Link to={"/signin"} className="text-green-700">Signin</Link> </span>
+                    <Link to={"/signin"} className="text-sm text-center text-green-700">Already have an account? Signin</Link>
+
                 </div>
             </div>
         </>
