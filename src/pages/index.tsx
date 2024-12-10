@@ -93,7 +93,7 @@ const Home = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 relative w-full mx-auto min-h-dvh bg-green-700">
                 <div className="h-full relative">
                     <img src="./assets/images/kano-pillars.jpg" alt="Kano pillars" className="w-full h-full object-cover object-center pointer-events-none" />
-                    <Button onClick={() => setTriggerSearch((prev) => !prev)} variant={"outline"} className="flex items-center justify-center gap-1 group outline outline-green-700 bg-green-100 hover:bg-green-200 absolute bottom-10 left-1/2 -translate-x-1/2 duration-300 w-[50%] text-green-700 font-bold py-2 px-4 rounded mt-4">
+                    <Button onClick={() => setTriggerSearch((prev) => !prev)} variant={"outline"} className="hidden lg:flex items-center justify-center gap-1 group outline outline-green-700 bg-green-100 hover:bg-green-200 absolute bottom-10 left-1/2 -translate-x-1/2 duration-300 w-[50%] text-green-700 font-bold py-2 px-4 rounded mt-4">
                         Search for Players
                         <MoveRight className="group-hover:translate-x-1 duration-300" />
                     </Button>
