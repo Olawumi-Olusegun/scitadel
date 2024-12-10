@@ -30,7 +30,6 @@ const Home = () => {
                 setIsOpen(false)
             } else {
                 setDeviceWidth(false)
-
             }
         }
 
@@ -75,17 +74,17 @@ const Home = () => {
                 {isOpen && (
                     <ul className="mt-4 flex flex-col space-y-3 text-black/80 lg:hidden h-screen">
                         <li className="mb-3">
-                            <Button onClick={() => setTriggerSearch((prev) => !prev)} variant={"outline"} className="w-full flex items-center justify-center gap-1 group outline outline-green-700 bg-green-100 hover:bg-green-200 duration-300  text-green-700 font-bold py-2 px-4 rounded mt-4">
+                            <Button onClick={() => setTriggerSearch((prev) => !prev)} variant={"outline"} className="w-full flex items-center justify-center gap-1 group outline outline-green-500 bg-green-100 hover:bg-green-200 duration-300  text-green-500 font-bold py-2 px-4 rounded mt-4">
                                 Search for Players
                                 <MoveRight className="group-hover:translate-x-1 duration-300" />
                             </Button>
                         </li>
-                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Goalkeepers</Link></li>
-                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Defenders</Link></li>
-                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Midfielders</Link></li>
-                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Attackers</Link></li>
-                        <li onClick={() => setIsOpen(false)}><Link to={"/signin"}>Log in</Link></li>
-                        <li onClick={() => setIsOpen(false)}><Link to={"/"}>Contact Us</Link></li>
+                        <li className="group block overflow-x-hidden" onClick={() => setIsOpen(false)}><Link to={"/"} className="group-hover:translate-x-1 duration-300 w-fit block">Goalkeepers</Link></li>
+                        <li className="group block overflow-x-hidden" onClick={() => setIsOpen(false)}><Link to={"/"} className="group-hover:translate-x-1 duration-300 w-fit block">Defenders</Link></li>
+                        <li className="group block overflow-x-hidden" onClick={() => setIsOpen(false)}><Link to={"/"} className="group-hover:translate-x-1 duration-300 w-fit block">Midfielders</Link></li>
+                        <li className="group block overflow-x-hidden" onClick={() => setIsOpen(false)}><Link to={"/"} className="group-hover:translate-x-1 duration-300 w-fit block">Attackers</Link></li>
+                        <li className="group block overflow-x-hidden" onClick={() => setIsOpen(false)}><Link to={"/signin"} className="group-hover:translate-x-1 duration-300 w-fit block">Log in</Link></li>
+                        <li className="group block overflow-x-hidden" onClick={() => setIsOpen(false)}><Link to={"/"} className="group-hover:translate-x-1 duration-300 w-fit block">Contact Us</Link></li>
                     </ul>
                 )}
             </div>
@@ -93,7 +92,7 @@ const Home = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 relative w-full mx-auto min-h-dvh bg-green-700">
                 <div className="h-full relative">
                     <img src="./assets/images/kano-pillars.jpg" alt="Kano pillars" className="w-full h-full object-cover object-center pointer-events-none" />
-                    <Button onClick={() => setTriggerSearch((prev) => !prev)} variant={"outline"} className="hidden lg:flex items-center justify-center gap-1 group outline outline-green-700 bg-green-100 hover:bg-green-200 absolute bottom-10 left-1/2 -translate-x-1/2 duration-300 w-[50%] text-green-700 font-bold py-2 px-4 rounded mt-4">
+                    <Button onClick={() => setTriggerSearch((prev) => !prev)} variant={"outline"} className="hidden lg:flex items-center justify-center gap-1 group outline outline-green-500 bg-green-100 hover:bg-green-200 absolute bottom-10 left-1/2 -translate-x-1/2 duration-300 w-[50%] text-green-700 font-bold py-2 px-4 rounded mt-4">
                         Search for Players
                         <MoveRight className="group-hover:translate-x-1 duration-300" />
                     </Button>
@@ -101,8 +100,8 @@ const Home = () => {
                 <div className="px-8 flex flex-col justify-center items-center">
                     <div className="flex flex-col justify-center text-white">
                         <h2 className="font-bold text-3xl lg:text-5xl mb-4">Football Talents abound in Nigeria. <br />
-                            Let's help you refine & vet your search for talented players!
                         </h2>
+                        <p className="">Let's help you refine & vet your search for talented players!</p>
                     </div>
                 </div>
             </div>
